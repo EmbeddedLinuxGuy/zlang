@@ -1,0 +1,12 @@
+#!/usr/bin/perl
+
+use strict;
+use warnings;
+
+while (my $text = <STDIN>) {
+    $text =~ s/ch/\x{fff}/g;
+    $text =~ tr/lrfvpbdtszgk/rlvfbptdzskg/;
+    $text =~ tr/LRFVPBDTSZGK/RLVFBPTDZSKG/;
+    $text =~ s/\x{fff}/zh/g;
+    print $text;
+}

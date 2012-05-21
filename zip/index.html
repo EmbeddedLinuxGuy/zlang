@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="zlang.js"></script>
+</script>
+</head>
+<body onLoad="populate()">
+<h1>Z-Lang Editor</h1>
+
+EDIT SOURCE TEXT
+<br />
+<textarea id="from">
+</textarea>
+
+<div id="to">
+</div>
+
+<form id="testform">
+<div id="maps">
+<br />
+<input type="button" value="ENCODE LETTER" onClick="translate()" /><br />
+<input type="button" value="NEW TRANSFORMATION" onClick="clone()" />
+</div>
+</form>
+
+</body>
+</html>
